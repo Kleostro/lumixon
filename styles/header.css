@@ -43,7 +43,7 @@
   font: var(--fb-xl);
 }
 
-.action-btn {
+.header-action-btn {
   border-radius: var(--br);
   font: var(--fb-m);
   color: var(--white);
