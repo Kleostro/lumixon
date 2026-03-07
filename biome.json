@@ -1,0 +1,160 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.4.5/schema.json",
+  "assist": {
+    "enabled": true,
+    "actions": {
+      "source": {
+        "noDuplicateClasses": "on",
+        "organizeImports": "on",
+        "useSortedAttributes": "on",
+        "useSortedKeys": {
+          "level": "on",
+          "options": {
+            "groupByNesting": true
+          }
+        }
+      }
+    }
+  },
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": ["**/*.{js,cjs,mjs,css,html,json,yml,yaml}", "!node_modules", "!.husky/_"]
+  },
+  "formatter": {
+    "bracketSameLine": true,
+    "bracketSpacing": true,
+    "enabled": true,
+    "expand": "auto",
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100,
+    "useEditorconfig": true
+  },
+  "html": {
+    "formatter": {
+      "enabled": true
+    }
+  },
+  "javascript": {
+    "experimentalEmbeddedSnippetsEnabled": true,
+    "formatter": {
+      "arrowParentheses": "asNeeded",
+      "quoteProperties": "asNeeded",
+      "quoteStyle": "single",
+      "semicolons": "asNeeded",
+      "trailingCommas": "all"
+    }
+  },
+  "json": {
+    "formatter": {
+      "enabled": true
+    },
+    "parser": {
+      "allowComments": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "domains": {
+      "project": "recommended",
+      "types": "all"
+    },
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "noNoninteractiveElementInteractions": "error"
+      },
+      "complexity": {
+        "noUselessStringConcat": "error",
+        "noUselessUndefined": "error",
+        "useSimplifiedLogicExpression": "error",
+        "noExcessiveCognitiveComplexity": {
+          "level": "error",
+          "options": {
+            "maxAllowedComplexity": 10
+          }
+        },
+        "useMaxParams": {
+          "level": "error",
+          "options": {
+            "max": 6
+          }
+        }
+      },
+      "correctness": {
+        "noUndeclaredDependencies": "error",
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error"
+      },
+      "nursery": {
+        "useExhaustiveSwitchCases": "error",
+        "useSortedClasses": "error"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "style": {
+        "noMagicNumbers": "error",
+        "noNegationElse": "error",
+        "noNestedTernary": "error",
+        "noParameterAssign": "error",
+        "noShoutyConstants": "error",
+        "noUnusedTemplateLiteral": "error",
+        "noUselessElse": "error",
+        "noYodaExpression": "error",
+        "useDefaultParameterLast": "error",
+        "useDefaultSwitchClause": "error",
+        "useForOf": "error",
+        "useNumericSeparators": "error",
+        "useObjectSpread": "error",
+        "useShorthandAssign": "error",
+        "useThrowNewError": "error",
+        "useThrowOnlyError": "error",
+        "useTrimStartEnd": "error",
+        "useConsistentObjectDefinitions": {
+          "level": "error",
+          "options": {
+            "syntax": "shorthand"
+          }
+        },
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": ["kebab-case"]
+          }
+        }
+      },
+      "suspicious": {
+        "noAlert": "error",
+        "noBitwiseOperators": "error",
+        "noConsole": "error",
+        "noConstantBinaryExpressions": "error",
+        "noDoubleEquals": "error",
+        "noEmptyBlockStatements": "error",
+        "noImportCycles": "error",
+        "noMisplacedAssertion": "error",
+        "noUnknownAtRules": "off",
+        "noVar": "error",
+        "useAwait": "error",
+        "useErrorMessage": "error",
+        "useGuardForIn": "error",
+        "useNumberToFixedDigitsArgument": "error"
+      }
+    }
+  },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": true,
+    "useIgnoreFile": true
+  }
+}

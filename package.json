@@ -1,0 +1,31 @@
+{
+  "name": "lumixon",
+  "packageManager": "bun@1.3.0",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.5",
+    "@commitlint/cli": "^20.4.2",
+    "@commitlint/config-conventional": "^20.4.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.1",
+    "live-server": "^1.2.2",
+    "stylelint": "16.14.1",
+    "stylelint-config-clean-order": "7.0.0",
+    "stylelint-config-standard": "37.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "2.8.0",
+    "stylelint-order": "6.0.4"
+  },
+  "scripts": {
+    "check:format": "biome check . --linter-enabled=false",
+    "dev": "live-server . --port=3000 --open=/index.html",
+    "format": "biome check --write . && stylelint \"**/*.css\" --fix",
+    "lint": "bun run lint:biome && bun run lint:stylelint && bun run check:format",
+    "lint:biome": "biome lint .",
+    "lint:stylelint": "stylelint \"**/*.css\"",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "modern-normalize": "^3.0.1"
+  }
+}
