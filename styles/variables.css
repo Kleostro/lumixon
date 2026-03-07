@@ -1,0 +1,40 @@
+:root {
+  --ff: Gilroy, sans-serif;
+
+  /* Heading fonts */
+  --fh-xxxs: 500 24px/100% var(--ff);
+  --fh-xxs: 600 34px/100% var(--ff);
+  --fh-xs: 600 36px/36px var(--ff);
+  --fh-s: 500 40px/100% var(--ff);
+  --fh-ms: 600 42px/42px var(--ff);
+  --fh-m: 500 55px/100% var(--ff);
+  --fh-ml: 600 55px/55px var(--ff);
+  --fh-l: 600 64px/100% var(--ff);
+  --fh-xl: 500 96px/100% var(--ff);
+
+  /* Body fonts */
+  --fb-xxxs: 400 8px/100% var(--ff);
+  --fb-xxs: 400 11px/11px var(--ff);
+  --fb-xs: 400 12px/100% var(--ff);
+  --fb-s: 400 14px/100% var(--ff);
+  --fb-ms: 400 16px/100% var(--ff);
+  --fb-m: 500 16px/100% var(--ff);
+  --fb-ml: 400 18px/18px var(--ff);
+  --fb-l: 400 20px/100% var(--ff);
+  --fb-xl: 500 20px/100% var(--ff);
+  --fb-xxl: 500 24px/100% var(--ff);
+  --fb-xxxl: 600 24px/100% var(--ff);
+  --fb-xxxxl: 500 32px/100% var(--ff);
+  --fb-xxxxxl: 600 32px/100% var(--ff);
+  --fb-xxxxxxl: 500 36px/100% var(--ff);
+  --fb-xxxxxxxl: 500 64px/46px var(--ff);
+
+  /* Colors */
+  --white: #ffffff;
+  --dark-gray: #2f2f2f;
+  --gray: #989898;
+  --orange: #f2a62c;
+
+  /* Border radius */
+  --br: 24px;
+}
