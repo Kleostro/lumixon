@@ -1,5 +1,5 @@
 :root {
-  --ff: Gilroy, sans-serif;
+  --ff: gilroy, sans-serif;
 
   /* Heading fonts */
   --fh-xxxs: 500 24px/100% var(--ff);
@@ -30,7 +30,7 @@
   --fb-xxxxxxxl: 500 64px/46px var(--ff);
 
   /* Colors */
-  --white: #ffffff;
+  --white: #fff;
   --dark-gray: #2f2f2f;
   --gray: #989898;
   --orange: #f2a62c;
