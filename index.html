@@ -11,7 +11,13 @@
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./main.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./main.js" type="module" defer></script>
   </head>
   <body>
     <div class="core-container">
@@ -41,9 +47,115 @@
             </ul>
           </nav>
           <a href="tel:+79030091215" class="phone-link">+7 903 009-12-55</a>
-          <button class="action-btn">Получить решение</button>
+          <button class="header-action-btn">Получить решение</button>
         </div>
       </header>
+
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Расскажите задачу — разработаем решение по свету
+          </h1>
+
+          <div class="hero-bullets">
+            <div class="hero-bullet">
+              <span class="bullet-arrow">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1H16M16 1V16M16 1L1 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="bullet-text">Бесплатно</span>
+            </div>
+            <div class="hero-bullet">
+              <span class="bullet-arrow">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1H16M16 1V16M16 1L1 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="bullet-text">За 15 минут</span>
+            </div>
+            <div class="hero-bullet">
+              <span class="bullet-arrow">
+                <svg
+                  width="17"
+                  height="17"
+                  viewBox="0 0 17 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 1H16M16 1V16M16 1L1 16"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+              <span class="bullet-text">3 концепции на выбор</span>
+            </div>
+          </div>
+
+          <button class="hero-action-btn">Получить решение</button>
+        </div>
+
+        <div class="hero-slider swiper">
+          <div class="hero-slider-wrapper swiper-wrapper">
+            <div class="hero-slide swiper-slide">
+              <img src="./assets/img/svg/logo-t-bank.svg" alt="logo t-bank" />
+            </div>
+            <div class="hero-slide swiper-slide">
+              <img src="./assets/img/svg/logo-don.svg" alt="logo don" />
+            </div>
+            <div class="hero-slide swiper-slide">
+              <img src="./assets/img/svg/logo-gum.svg" alt="logo gum" />
+            </div>
+
+            <div class="hero-slide swiper-slide">
+              <img
+                src="./assets/img/svg/logo-sinergia.svg"
+                alt="logo sinergia"
+              />
+            </div>
+            <div class="hero-slide swiper-slide">
+              <img src="./assets/img/svg/logo-wtb.svg" alt="logo wtb" />
+            </div>
+
+            <!-- // TBD: add other 1 slide -->
+            <div class="hero-slide swiper-slide">
+              <img
+                src="./assets/img/svg/logo-sinergia.svg"
+                alt="logo sinergia"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <span class="section-separator"></span>
     </div>
   </body>
 </html>
