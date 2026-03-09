@@ -1,0 +1,75 @@
+.workflow-title {
+  margin-bottom: 59px;
+  font: var(--fh-ml);
+  color: var(--dark-gray);
+}
+
+.workflow-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 84px;
+}
+
+.workflow-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-right: 40px;
+}
+
+.workflow-item:not(:first-child) {
+  padding-top: 49.5px;
+  border-top: 1px solid var(--dark-gray);
+}
+
+.workflow-item:not(:last-child) {
+  padding-bottom: 49.5px;
+}
+
+.workflow-item-left {
+  max-width: 20%;
+  margin-right: auto;
+}
+
+.workflow-item-right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 80%;
+}
+
+.workflow-index {
+  font: var(--fh-xl);
+  color: var(--light-gray);
+}
+
+.workflow-item-title {
+  max-width: 400px;
+  font: var(--fb-xxxxxl);
+  color: var(--dark-gray);
+  text-align: left;
+}
+
+.workflow-item-text {
+  max-width: 500px;
+  margin-right: 50px;
+
+  font: var(--fb-xxl);
+  color: var(--dark-gray);
+  text-align: left;
+}
+
+.workflow-banner {
+  position: relative;
+  padding: 62.5px 56px;
+  border-radius: 30px;
+  background: url("../assets/img/jpg/workflow-banner.jpg") bottom/cover
+    no-repeat;
+}
+
+.workflow-banner-text {
+  font: var(--fh-m);
+  color: var(--white);
+}
