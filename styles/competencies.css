@@ -1,0 +1,77 @@
+.competencies-title {
+  margin-bottom: 49px;
+  font: var(--fh-ml);
+  color: var(--dark-gray);
+}
+
+.competencies-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 84px;
+}
+
+.competencies-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.competencies-item-img {
+  width: 100%;
+  height: 100%;
+  max-height: 265px;
+  border-radius: 30px;
+
+  object-fit: cover;
+}
+
+.competencies-item-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 26px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 30px;
+}
+
+.competencies-item-title {
+  width: max-content;
+  padding: 14.5px 28px;
+  border-radius: 30px;
+
+  font: var(--fb-xxl);
+  color: var(--white);
+
+  background-color: var(--dark-gray);
+}
+
+.competencies-item-bullets {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.competencies-item-bullet {
+  font: var(--fb-l);
+  color: var(--dark-gray);
+}
+
+.competencies-banner {
+  position: relative;
+
+  grid-column: 2 span;
+
+  padding: 30px 56px;
+  border-radius: 30px;
+
+  background:
+    linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
+    url("../assets/img/jpg/competencies-banner.jpg") left/cover no-repeat;
+}
+
+.competencies-banner-text {
+  font: var(--fh-m);
+  color: var(--white);
+}

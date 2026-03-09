@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 110px;
+}
+
 .core-container {
   display: flex;
   flex-direction: column;
@@ -24,4 +28,66 @@ html {
 
 .dark-gray-text {
   color: var(--dark-gray);
+}
+
+.banner-button {
+  position: absolute;
+  top: 50%;
+  right: 56px;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+}
+
+.banner-button-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+
+  background-color: var(--white);
+
+  transition: background-color 0.3s ease;
+}
+
+.banner-button-text {
+  padding: 14.5px 28px;
+  border-radius: 100px;
+
+  font: var(--fb-xxl);
+  color: var(--dark-gray);
+
+  background-color: var(--white);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.banner-button-arrow > svg > path {
+  stroke: var(--dark-gray);
+  transition: stroke 0.3s ease;
+}
+
+.banner-button:hover .banner-button-text,
+.banner-button:focus .banner-button-text,
+.banner-button:active .banner-button-text {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.banner-button:hover .banner-button-arrow,
+.banner-button:focus .banner-button-arrow,
+.banner-button:active .banner-button-arrow {
+  background-color: var(--orange);
+}
+
+.banner-button:hover .banner-button-arrow > svg > path,
+.banner-button:focus .banner-button-arrow > svg > path,
+.banner-button:active .banner-button-arrow > svg > path {
+  stroke: var(--white);
 }
