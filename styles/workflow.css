@@ -43,6 +43,11 @@
 .workflow-index {
   font: var(--fh-xl);
   color: var(--light-gray);
+  transition: color 0.3s ease;
+}
+
+.workflow-item:hover > .workflow-item-left > .workflow-index {
+  color: var(--orange);
 }
 
 .workflow-item-title {
