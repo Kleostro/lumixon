@@ -60,12 +60,8 @@
 
 .competencies-banner {
   position: relative;
-
-  grid-column: 2 span;
-
   padding: 30px 56px;
   border-radius: 30px;
-
   background:
     linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
     url("../assets/img/jpg/competencies-banner.jpg") left/cover no-repeat;
