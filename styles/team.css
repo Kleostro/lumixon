@@ -1,0 +1,206 @@
+.team-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.team-title {
+  font: var(--fh-ml);
+  color: var(--dark-gray);
+}
+
+.team-text {
+  justify-self: flex-end;
+
+  margin-right: 160px;
+  margin-bottom: 57px;
+
+  font: var(--fb-xxl);
+  color: var(--dark-gray);
+}
+
+.teammates-list {
+  display: flex;
+  gap: 19px;
+  margin-bottom: 84px;
+}
+
+.teammate-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 429px;
+  min-height: 365px;
+  padding: 32px 37px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 30px;
+
+  transition: border-color 0.3s ease;
+}
+
+.teammate-card:hover {
+  border-color: var(--orange);
+}
+
+.teammate-card-img {
+  width: 115px;
+  height: 115px;
+  border-radius: 100%;
+}
+
+.teammate-card-img-first {
+  background: url("../assets/img/png/teammate-1.png") top/cover no-repeat;
+}
+
+.teammate-card-img-second {
+  background: url("../assets/img/png/teammate-2.png") top/cover no-repeat;
+}
+
+.teammate-card-img-third {
+  background: url("../assets/img/jpg/teammate-3.jpg") top/cover no-repeat;
+}
+
+.teammate-card-name {
+  margin-top: 18px;
+  font: var(--fb-xxxxl);
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.teammate-card-position {
+  margin-top: 12px;
+  padding: 9px 17px;
+  border-radius: 72px;
+
+  font: var(--fb-s);
+  font-weight: 500;
+  color: var(--white);
+
+  background-color: var(--dark-gray);
+
+  transition: background-color 0.3s ease;
+}
+
+.teammate-card:hover > .teammate-card-position {
+  background-color: var(--orange);
+}
+
+.teammate-card-email {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.teammate-card-email-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  background-color: var(--dark-gray);
+
+  transition: background-color 0.3s ease;
+}
+
+.teammate-card:hover > .teammate-card-email > .teammate-card-email-icon {
+  background-color: var(--orange);
+}
+
+.teammate-card-email-text {
+  font: var(--fb-xl);
+  color: var(--dark-gray);
+}
+
+.cooperation-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  padding-top: 191px;
+  border-radius: 30px;
+
+  background:
+    linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 56%)),
+    url("../assets/img/png/cooperation-banner.png") center / cover no-repeat;
+}
+
+.cooperation-banner-title {
+  max-width: 713px;
+  margin-bottom: 20px;
+
+  font: var(--fh-l);
+  color: var(--white);
+  text-align: center;
+}
+
+.cooperation-banner-text {
+  margin-bottom: 30px;
+  font: var(--fb-xxl);
+  color: var(--white);
+}
+
+.cooperation-banner-btn {
+  width: max-content;
+  margin-bottom: 113px;
+  padding: 22.5px 28px;
+  border-radius: 100px;
+
+  font: var(--fb-xxl);
+  color: var(--dark-gray);
+
+  background-color: var(--white);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--white);
+    background-color: var(--orange);
+  }
+}
+
+.cooperation-banner-contacts {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 42px;
+}
+
+.cooperation-banner-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cooperation-banner-contact-icon {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  background: rgb(255 255 255 / 5%);
+  backdrop-filter: blur(2px);
+  box-shadow:
+    0 8px 32px rgb(0 0 0 / 10%),
+    inset 1px 1px 0 rgb(255 255 255 / 63%),
+    inset -1px -1px 0 rgb(255 255 255 / 31%),
+    inset 0 0 0 0 rgb(255 255 255 / 0%);
+}
+
+.cooperation-banner-contact-text {
+  font: var(--fb-xl);
+  color: var(--white);
+}
