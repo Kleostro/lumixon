@@ -1,11 +1,20 @@
 .footer {
   padding-bottom: 24px;
+
+  @media (width <= 830px) {
+    padding-bottom: 10px;
+  }
 }
 
 .footer-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+
+  @media (width <= 830px) {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 
 .footer-nav,
@@ -15,6 +24,10 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+
+  @media (width <= 830px) {
+    margin-bottom: 15px;
+  }
 }
 
 .footer-subtitle {

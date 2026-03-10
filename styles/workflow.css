@@ -2,12 +2,21 @@
   margin-bottom: 59px;
   font: var(--fh-ml);
   color: var(--dark-gray);
+
+  @media (width <= 830px) {
+    margin-bottom: 20px;
+    font: var(--fh-xxs);
+  }
 }
 
 .workflow-list {
   display: flex;
   flex-direction: column;
   margin-bottom: 84px;
+
+  @media (width <= 830px) {
+    margin-bottom: 32px;
+  }
 }
 
 .workflow-item {
@@ -17,15 +26,28 @@
   justify-content: space-between;
 
   padding-right: 40px;
+
+  @media (width <= 830px) {
+    align-items: flex-start;
+    padding-right: 0;
+  }
 }
 
 .workflow-item:not(:first-child) {
   padding-top: 49.5px;
   border-top: 1px solid var(--dark-gray);
+
+  @media (width <= 830px) {
+    padding-top: 20px;
+  }
 }
 
 .workflow-item:not(:last-child) {
   padding-bottom: 49.5px;
+
+  @media (width <= 830px) {
+    padding-bottom: 20px;
+  }
 }
 
 .workflow-item-left {
@@ -38,12 +60,25 @@
   justify-content: space-between;
   width: 100%;
   max-width: 80%;
+
+  @media (width <= 830px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+
+    width: 100%;
+  }
 }
 
 .workflow-index {
   font: var(--fh-xl);
   color: var(--light-gray);
   transition: color 0.3s ease;
+
+  @media (width <= 830px) {
+    font: var(--fh-s);
+  }
 }
 
 .workflow-item:hover > .workflow-item-left > .workflow-index {
@@ -55,6 +90,10 @@
   font: var(--fb-xxxxxl);
   color: var(--dark-gray);
   text-align: left;
+
+  @media (width <= 830px) {
+    font: var(--fb-xxxl);
+  }
 }
 
 .workflow-item-text {
@@ -64,17 +103,34 @@
   font: var(--fb-xxl);
   color: var(--dark-gray);
   text-align: left;
+
+  @media (width <= 830px) {
+    font: var(--fb-m);
+  }
 }
 
 .workflow-banner {
   position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
   padding: 62.5px 56px;
   border-radius: 30px;
-  background: url("../assets/img/jpg/workflow-banner.jpg") bottom/cover
+
+  background: url("../assets/img/webp/workflow-banner.webp") bottom/cover
     no-repeat;
+
+  @media (width <= 830px) {
+    padding: 27px 28px;
+  }
 }
 
 .workflow-banner-text {
   font: var(--fh-m);
   color: var(--white);
+
+  @media (width <= 830px) {
+    font: var(--fh-xxs);
+  }
 }
