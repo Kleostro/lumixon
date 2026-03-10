@@ -1,11 +1,21 @@
 .team-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media (width <= 830px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .team-title {
   font: var(--fh-ml);
   color: var(--dark-gray);
+
+  @media (width <= 830px) {
+    margin-bottom: 20px;
+    font: var(--fh-xxs);
+  }
 }
 
 .team-text {
@@ -16,12 +26,25 @@
 
   font: var(--fb-xxl);
   color: var(--dark-gray);
+
+  @media (width <= 830px) {
+    margin: 0;
+    margin-bottom: 20px;
+    font: var(--fb-m);
+  }
 }
 
 .teammates-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 19px;
+  justify-content: center;
+
   margin-bottom: 84px;
+
+  @media (width <= 830px) {
+    margin-bottom: 32px;
+  }
 }
 
 .teammate-card {
@@ -31,7 +54,7 @@
   justify-content: center;
 
   width: 100%;
-  max-width: 429px;
+  max-width: 428px;
   min-height: 365px;
   padding: 32px 37px;
   border: 1px solid var(--dark-gray);
@@ -51,15 +74,15 @@
 }
 
 .teammate-card-img-first {
-  background: url("../assets/img/png/teammate-1.png") top/cover no-repeat;
+  background: url("../assets/img/webp/teammate-1.webp") top/cover no-repeat;
 }
 
 .teammate-card-img-second {
-  background: url("../assets/img/png/teammate-2.png") top/cover no-repeat;
+  background: url("../assets/img/webp/teammate-2.webp") top/cover no-repeat;
 }
 
 .teammate-card-img-third {
-  background: url("../assets/img/jpg/teammate-3.jpg") top/cover no-repeat;
+  background: url("../assets/img/webp/teammate-3.webp") top/cover no-repeat;
 }
 
 .teammate-card-name {
@@ -128,7 +151,11 @@
 
   background:
     linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 56%)),
-    url("../assets/img/png/cooperation-banner.png") center / cover no-repeat;
+    url("../assets/img/webp/cooperation-banner.webp") center / cover no-repeat;
+
+  @media (width <= 830px) {
+    padding: 58px 28px;
+  }
 }
 
 .cooperation-banner-title {
@@ -138,12 +165,22 @@
   font: var(--fh-l);
   color: var(--white);
   text-align: center;
+
+  @media (width <= 830px) {
+    font: var(--fh-xs);
+  }
 }
 
 .cooperation-banner-text {
   margin-bottom: 30px;
   font: var(--fb-xxl);
   color: var(--white);
+
+  @media (width <= 830px) {
+    margin-bottom: 20px;
+    font: var(--fb-m);
+    text-align: center;
+  }
 }
 
 .cooperation-banner-btn {
@@ -167,12 +204,27 @@
     color: var(--white);
     background-color: var(--orange);
   }
+
+  @media (width <= 830px) {
+    margin-bottom: 20px;
+    padding: 12.5px 46px;
+    font: var(--fb-m);
+  }
 }
 
 .cooperation-banner-contacts {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+
   padding-bottom: 42px;
+
+  @media (width <= 830px) {
+    flex-direction: column;
+    align-self: flex-start;
+    padding-bottom: 0;
+  }
 }
 
 .cooperation-banner-link {
@@ -203,4 +255,8 @@
 .cooperation-banner-contact-text {
   font: var(--fb-xl);
   color: var(--white);
+
+  @media (width <= 830px) {
+    font: var(--fb-m);
+  }
 }

@@ -13,6 +13,10 @@ section[id] {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 58px;
+
+  @media (width <= 830px) {
+    padding: 0 31px;
+  }
 }
 
 .section-separator {
@@ -20,6 +24,14 @@ section[id] {
   height: 1px;
   margin: 43px 0;
   background-color: var(--dark-gray);
+
+  @media (width <= 830px) {
+    margin: 32px 0;
+  }
+}
+
+.section-separator:first-of-type {
+  margin-top: 20px;
 }
 
 .white-text {
@@ -30,14 +42,23 @@ section[id] {
   color: var(--dark-gray);
 }
 
-.banner-button {
-  position: absolute;
-  top: 50%;
-  right: 56px;
-  transform: translateY(-50%);
+.banner-button-invert {
+  display: none;
+  margin-top: 25px;
 
+  @media (width <= 1390px) {
+    display: flex;
+  }
+}
+
+.banner-button {
   display: flex;
   align-items: center;
+  margin-right: 56px;
+
+  @media (width <= 1390px) {
+    display: none;
+  }
 }
 
 .banner-button-arrow {
@@ -54,6 +75,10 @@ section[id] {
   transition: background-color 0.3s ease;
 }
 
+.banner-button-invert > .banner-button-arrow {
+  background-color: var(--dark-gray);
+}
+
 .banner-button-text {
   padding: 14.5px 28px;
   border-radius: 100px;
@@ -66,6 +91,16 @@ section[id] {
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+
+  @media (width <= 830px) {
+    width: calc(100% - 57px);
+    padding: 14.5px 24.5px;
+  }
+}
+
+.banner-button-invert > .banner-button-text {
+  color: var(--white);
+  background-color: var(--dark-gray);
 }
 
 .banner-button-arrow > svg > path {
@@ -73,16 +108,27 @@ section[id] {
   transition: stroke 0.3s ease;
 }
 
+.banner-button-invert > .banner-button-arrow > svg > path {
+  stroke: var(--white);
+  transition: stroke 0.3s ease;
+}
+
 .banner-button:hover .banner-button-text,
 .banner-button:focus .banner-button-text,
-.banner-button:active .banner-button-text {
+.banner-button:active .banner-button-text,
+.banner-button-invert:hover .banner-button-text,
+.banner-button-invert:focus .banner-button-text,
+.banner-button-invert:active .banner-button-text {
   color: var(--white);
   background-color: var(--orange);
 }
 
 .banner-button:hover .banner-button-arrow,
 .banner-button:focus .banner-button-arrow,
-.banner-button:active .banner-button-arrow {
+.banner-button:active .banner-button-arrow,
+.banner-button-invert:hover .banner-button-arrow,
+.banner-button-invert:focus .banner-button-arrow,
+.banner-button-invert:active .banner-button-arrow {
   background-color: var(--orange);
 }
 
@@ -90,4 +136,13 @@ section[id] {
 .banner-button:focus .banner-button-arrow > svg > path,
 .banner-button:active .banner-button-arrow > svg > path {
   stroke: var(--white);
+}
+
+.swiper-pagination-bullet {
+  opacity: 1 !important;
+  background: var(--light-gray) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--dark-gray) !important;
 }

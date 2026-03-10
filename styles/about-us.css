@@ -1,11 +1,21 @@
 .about-us-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media (width <= 830px) {
+    display: block;
+  }
 }
 
 .about-us-title {
   font: var(--fh-ml);
   color: var(--dark-gray);
+
+  @media (width <= 830px) {
+    grid-column: 2 span;
+    margin-bottom: 10px;
+    font: var(--fh-xxs);
+  }
 }
 
 .about-us-text {
@@ -13,27 +23,59 @@
   margin-bottom: 49px;
   font: var(--fb-xxl);
   color: var(--dark-gray);
+
+  @media (width <= 830px) {
+    grid-column: 2 span;
+    margin: unset;
+    margin-bottom: 14px;
+    font: var(--fb-m);
+  }
 }
 
 .about-us-cards {
   display: flex;
   grid-column: 2 span;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
+
   margin-bottom: 84px;
+
+  @media (width <= 830px) {
+    margin-bottom: 32px;
+  }
 }
 
 .about-us-card {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
   width: 100%;
+  max-width: 428px;
 }
 
 .about-us-card:nth-of-type(2) {
   border-radius: 30px;
   background:
     linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
-    url("../assets/img/png/about-us-1.png") center/cover no-repeat;
+    url("../assets/img/webp/about-us-1.webp") center/cover no-repeat;
+}
+
+.about-us-card:nth-of-type(3) {
+  @media (width <= 830px) {
+    gap: 5px;
+    padding: 16px 28px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 30px;
+  }
+}
+
+.about-us-card-bottom.about-us-card-border {
+  @media (width <= 830px) {
+    border: unset;
+    border-radius: unset;
+  }
 }
 
 .about-us-card-border {
@@ -83,11 +125,21 @@
   height: 104px;
   padding-top: 24px;
   padding-left: 55px;
+
+  @media (width <= 830px) {
+    height: 55px;
+    padding-top: 15px;
+    padding-left: 28px;
+  }
 }
 
 .about-us-card-top-image {
   border-radius: 30px;
-  background: url("../assets/img/png/about-us-2.png") center/cover no-repeat;
+  background: url("../assets/img/webp/about-us-2.webp") center/cover no-repeat;
+
+  @media (width <= 830px) {
+    border-radius: 15px;
+  }
 }
 
 .about-us-card-bottom {
@@ -95,30 +147,52 @@
   flex-direction: column;
   gap: 18px;
   padding: 30px 0 26px 56px;
+
+  @media (width <= 830px) {
+    padding: 15px 0 16px 28px;
+  }
 }
 
 .about-us-card-bottom-title {
   font: var(--fb-xxxxxxxl);
+
+  @media (width <= 830px) {
+    font: var(--fb-xxxxxxl);
+  }
 }
 
 .about-us-card-bottom-text {
   font: var(--fb-l);
+
+  @media (width <= 830px) {
+    font: var(--fb-ms);
+  }
 }
 
 .about-us-banner {
   position: relative;
 
+  display: flex;
   grid-column: 2 span;
+  justify-content: space-between;
 
   padding: 64px 56px;
   border-radius: 30px;
 
   background:
     linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
-    url("../assets/img/jpg/about-us-banner.jpg") center/cover no-repeat;
+    url("../assets/img/webp/about-us-banner.webp") center/cover no-repeat;
+
+  @media (width <= 830px) {
+    padding: 27px 28px;
+  }
 }
 
 .about-us-banner-text {
   font: var(--fh-m);
   color: var(--white);
+
+  @media (width <= 830px) {
+    font: var(--fh-xs);
+  }
 }
