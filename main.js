@@ -103,7 +103,7 @@ const modalFormTriggerBtns = document.querySelectorAll('.open-modal-form-btn');
 const modalForm = document.querySelector('.modal-form');
 const modalFormOverlay = document.querySelector('.modal-form-overlay');
 const modalFormContent = document.querySelector('.modal-form-content');
-const modalFormCloseBtns = document.querySelectorAll('.modal-close-btn');
+const modalFormCloseBtn = document.querySelector('.modal-form-close-btn');
 
 modalFormTriggerBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -114,14 +114,14 @@ modalFormTriggerBtns.forEach((btn) => {
   });
 })
 
-modalFormCloseBtns.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    modalFormOverlay.classList.remove('visible');
-    modalForm.classList.remove('visible');
-    modalFormContent.classList.remove('visible');
-    document.body.classList.remove('stop-scroll');
-  });
-})
+
+modalFormCloseBtn.addEventListener('click', () => {
+  modalFormOverlay.classList.remove('visible');
+  modalForm.classList.remove('visible');
+  modalFormContent.classList.remove('visible');
+  document.body.classList.remove('stop-scroll');
+});
+
 
 modalFormOverlay.addEventListener('click', (e) => {
   if (e.target.closest('.modal-form-content')) {
@@ -132,3 +132,41 @@ modalFormOverlay.addEventListener('click', (e) => {
   modalFormContent.classList.remove('visible');
   document.body.classList.remove('stop-scroll');
 })
+
+
+const modalPopup = document.querySelector('.modal-popup');
+const modalPopupOverlay = document.querySelector('.modal-popup-overlay');
+const modalPopupContent = document.querySelector('.modal-popup-content');
+const modalPopupCloseBtn = document.querySelector('.modal-popup-close-btn');
+
+
+setTimeout(() => {
+  modalPopupOverlay.classList.add('visible');
+  modalPopup.classList.add('visible');
+  modalPopupContent.classList.add('visible');
+  document.body.classList.add('stop-scroll');
+}, 40000);
+
+
+modalPopupCloseBtn.addEventListener('click', () => {
+  modalPopupOverlay.classList.remove('visible');
+  modalPopup.classList.remove('visible');
+  modalPopupContent.classList.remove('visible');
+  document.body.classList.remove('stop-scroll');
+});
+
+
+
+modalPopupOverlay.addEventListener('click', (e) => {
+  if (e.target.closest('.modal-popup-content')) {
+    return;
+  }
+  modalPopupOverlay.classList.remove('visible');
+  modalPopup.classList.remove('visible');
+  modalPopupContent.classList.remove('visible');
+  document.body.classList.remove('stop-scroll');
+})
+
+// элементы формы и попапа
+const feedbackForm = document.querySelector('.modal-form-form');
+const modalPopupForm = document.querySelector('.modal-popup-form');

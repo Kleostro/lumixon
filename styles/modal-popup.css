@@ -1,0 +1,265 @@
+.modal-popup-content {
+  max-width: 950px;
+  padding: 40px 60px;
+  background:
+    linear-gradient(rgb(0 0 0 / 40%), rgb(0 0 0 / 40%)),
+    url("../assets/img/webp/popup-bg.webp") center / cover no-repeat;
+
+  @media (width <= 830px) {
+    margin: 0;
+    padding: 42px 29px;
+  }
+}
+
+.modal-popup-content-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (width <= 830px) {
+    flex-direction: column;
+  }
+}
+
+.modal-popup-left {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 464px;
+  height: 100%;
+  margin-right: 34px;
+
+  @media (width <= 830px) {
+    width: 100%;
+    max-width: unset;
+    margin-right: 0;
+  }
+}
+
+.modal-popup-form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 26.5px 36px;
+  border-radius: 15px;
+
+  background-color: var(--white);
+
+  @media (width <= 830px) {
+    width: 100%;
+  }
+}
+
+.modal-popup-partners-img {
+  width: 100%;
+  margin-top: 25px;
+  @media (width <= 830px) {
+    display: none;
+  }
+}
+
+.modal-popup-left-label {
+  width: max-content;
+  margin-bottom: 10px;
+  padding: 8px 24px;
+  border-radius: 24px;
+
+  font: var(--fb-m);
+  color: var(--dark-gray);
+
+  background-color: var(--white);
+}
+
+.modal-popup-left-title {
+  margin-bottom: 10px;
+  font: var(--fh-ms);
+  color: var(--white);
+}
+
+.modal-popup-left-text {
+  font: var(--fb-l);
+  color: var(--white);
+
+  @media (width <= 830px) {
+    margin-bottom: 24px;
+  }
+}
+
+.modal-popup-left-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 136px;
+
+  @media (width <= 830px) {
+    display: none;
+  }
+}
+
+.modal-popup-left-contacts-text {
+  font: var(--fb-xs);
+  color: var(--white);
+}
+
+.modal-popup-title {
+  margin-bottom: 4px;
+  font: var(--fh-xxs);
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.modal-popup-text {
+  display: flex;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  font: var(--fb-xs);
+  color: var(--dark-gray);
+}
+
+.modal-popup-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 10px;
+
+  @media (width <= 830px) {
+    gap: 8px;
+  }
+}
+
+.modal-popup-control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+
+  @media (width <= 830px) {
+    max-width: 100%;
+  }
+}
+
+.modal-popup-control-textarea-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (width <= 830px) {
+    margin-bottom: 8px;
+  }
+}
+
+.modal-popup-control-label {
+  font: var(--fb-m);
+  color: var(--dark-gray);
+}
+
+.modal-popup-control-textarea {
+  padding-bottom: 0;
+}
+
+.modal-popup-control-input,
+.modal-popup-control-textarea {
+  resize: none;
+
+  width: 100%;
+  padding: 14px 28px;
+  border: 1px solid var(--gray);
+  border-radius: 100px;
+
+  font: var(--fb-m);
+  color: var(--dark-gray);
+
+  transition: border 0.3s ease;
+
+  &::placeholder {
+    font: var(--fb-m);
+    color: var(--gray);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid var(--dark-gray);
+    outline: none;
+  }
+}
+
+.modal-popup-control-label-required {
+  font: var(--fb-m);
+  color: red;
+}
+
+.modal-popup-button-submit {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px 28px;
+  border-radius: 100px;
+
+  font: var(--fb-m);
+  color: var(--white);
+
+  background-color: var(--dark-gray);
+
+  transition: background-color 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--orange);
+  }
+}
+
+.modal-popup-info {
+  font: var(--fb-xxs);
+  color: var(--dark-gray);
+}
+
+.modal-popup-info-accent {
+  color: red;
+}
+
+.modal-popup-info-link {
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--gray);
+    outline: none;
+  }
+}
+
+.modal-popup-contacts-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.modal-popup-contact-icon {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+
+  background: rgb(255 255 255 / 5%);
+  backdrop-filter: blur(2px);
+  box-shadow:
+    0 8px 32px rgb(0 0 0 / 10%),
+    inset 1px 1px 0 rgb(255 255 255 / 63%),
+    inset -1px -1px 0 rgb(255 255 255 / 31%),
+    inset 0 0 0 0 rgb(255 255 255 / 0%);
+}
+
+.modal-popup-close-btn::before,
+.modal-popup-close-btn::after {
+  background-color: var(--white);
+}
