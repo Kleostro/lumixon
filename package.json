@@ -22,7 +22,8 @@
     "lint": "bun run lint:biome && bun run lint:stylelint && bun run check:format",
     "lint:biome": "biome lint .",
     "lint:stylelint": "stylelint \"**/*.css\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "build": "bun build ./index.html --outdir ./dist --production"
   },
   "type": "module"
 }
