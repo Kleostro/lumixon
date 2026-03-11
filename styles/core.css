@@ -146,3 +146,7 @@ section[id] {
 .swiper-pagination-bullet-active {
   background: var(--dark-gray) !important;
 }
+
+.stop-scroll {
+  overflow: hidden;
+}
