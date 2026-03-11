@@ -1,12 +1,11 @@
 
 new Swiper('.hero-slider', {
   init: true,
-  loop: true,
   autoplay: {
     delay: 4000,
   },
-  spaceBetween: 127,
-  slidesPerView: 5,
+  spaceBetween: 155,
+  slidesPerView: 4,
   slidesPerGroup: 1,
   breakpoints: {
     0: {
@@ -14,8 +13,8 @@ new Swiper('.hero-slider', {
       spaceBetween: 70,
     },
     1390: {
-      spaceBetween: 127,
-      slidesPerView: 5,
+      spaceBetween: 152,
+      slidesPerView: 4,
     },
   }
 });
@@ -99,3 +98,37 @@ document.addEventListener('click', (e) => {
   burgerButton.classList.remove('open');
   burgerButton.previousSibling.previousSibling.classList.remove('open');
 });
+
+const modalFormTriggerBtns = document.querySelectorAll('.open-modal-form-btn');
+const modalForm = document.querySelector('.modal-form');
+const modalFormOverlay = document.querySelector('.modal-form-overlay');
+const modalFormContent = document.querySelector('.modal-form-content');
+const modalFormCloseBtns = document.querySelectorAll('.modal-close-btn');
+
+modalFormTriggerBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    modalFormOverlay.classList.add('visible');
+    modalForm.classList.add('visible');
+    modalFormContent.classList.add('visible');
+    document.body.classList.add('stop-scroll');
+  });
+})
+
+modalFormCloseBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    modalFormOverlay.classList.remove('visible');
+    modalForm.classList.remove('visible');
+    modalFormContent.classList.remove('visible');
+    document.body.classList.remove('stop-scroll');
+  });
+})
+
+modalFormOverlay.addEventListener('click', (e) => {
+  if (e.target.closest('.modal-form-content')) {
+    return;
+  }
+  modalFormOverlay.classList.remove('visible');
+  modalForm.classList.remove('visible');
+  modalFormContent.classList.remove('visible');
+  document.body.classList.remove('stop-scroll');
+})

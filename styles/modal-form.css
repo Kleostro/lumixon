@@ -1,0 +1,155 @@
+.modal-form-content {
+  max-width: 641px;
+  padding: 51px 50px;
+  background-color: var(--white);
+
+  @media (width <= 830px) {
+    margin: 0;
+    padding: 33px 30px;
+  }
+}
+
+.modal-form-title {
+  margin-bottom: 10px;
+  font: var(--fh-ms);
+  color: var(--dark-gray);
+  text-align: center;
+
+  @media (width <= 830px) {
+    font: var(--fh-xxs);
+  }
+}
+
+.modal-form-text {
+  display: flex;
+
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+
+  font: var(--fb-l);
+  color: var(--dark-gray);
+  text-align: center;
+
+  @media (width <= 830px) {
+    margin-bottom: 10px;
+    font: var(--fb-ms);
+  }
+}
+
+.modal-form-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (width <= 830px) {
+    gap: 8px;
+  }
+}
+
+.modal-form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 260px;
+
+  @media (width <= 830px) {
+    max-width: 100%;
+  }
+}
+
+.modal-form-control-textarea-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (width <= 830px) {
+    margin-bottom: 8px;
+  }
+}
+
+.modal-form-control-label {
+  font: var(--fb-m);
+  color: var(--dark-gray);
+}
+
+.modal-form-control-textarea {
+  padding-bottom: 0;
+}
+
+.modal-form-control-input,
+.modal-form-control-textarea {
+  resize: none;
+
+  padding: 14px 28px;
+  border: 1px solid var(--gray);
+  border-radius: 100px;
+
+  font: var(--fb-m);
+  color: var(--dark-gray);
+
+  transition: border 0.3s ease;
+
+  &::placeholder {
+    font: var(--fb-m);
+    color: var(--gray);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid var(--dark-gray);
+    outline: none;
+  }
+}
+
+.modal-form-control-label-required {
+  font: var(--fb-m);
+  color: red;
+}
+
+.modal-form-button-submit {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px 28px;
+  border-radius: 100px;
+
+  font: var(--fb-m);
+  color: var(--white);
+
+  background-color: var(--dark-gray);
+
+  transition: background-color 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--orange);
+  }
+}
+
+.modal-form-info {
+  font: var(--fb-xxs);
+  color: var(--dark-gray);
+}
+
+.modal-form-info-accent {
+  color: red;
+}
+
+.modal-form-info-link {
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--gray);
+    outline: none;
+  }
+}
