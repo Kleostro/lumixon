@@ -177,6 +177,11 @@
   }
 }
 
+.products-slide-link {
+  position: absolute;
+  inset: 0;
+}
+
 .products-slide-shadow {
   position: absolute;
   z-index: -1;
