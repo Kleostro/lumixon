@@ -4,17 +4,14 @@ new Swiper('.hero-slider', {
   autoplay: {
     delay: 4000,
   },
-  spaceBetween: 155,
-  slidesPerView: 4,
+  slidesPerView: 'auto',
   slidesPerGroup: 1,
   breakpoints: {
     0: {
-      slidesPerView: 2,
       spaceBetween: 70,
     },
     1390: {
       spaceBetween: 152,
-      slidesPerView: 4,
     },
   }
 });
@@ -169,4 +166,6 @@ modalPopupOverlay.addEventListener('click', (e) => {
 
 // элементы формы и попапа
 const feedbackForm = document.querySelector('.modal-form-form');
+const feedbackFormSubmitBtn = document.querySelector('.modal-form-button-submit');
 const modalPopupForm = document.querySelector('.modal-popup-form');
+const modalPopupFormSubmitBtn = document.querySelector('.modal-popup-button-submit');
