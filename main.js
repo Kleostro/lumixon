@@ -142,7 +142,7 @@ setTimeout(() => {
   modalPopup.classList.add('visible');
   modalPopupContent.classList.add('visible');
   document.body.classList.add('stop-scroll');
-}, 40000);
+}, 120000);
 
 
 modalPopupCloseBtn.addEventListener('click', () => {
