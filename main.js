@@ -145,12 +145,12 @@ const modalPopupContent = document.querySelector('.modal-popup-content');
 const modalPopupCloseBtn = document.querySelector('.modal-popup-close-btn');
 
 
-setTimeout(() => {
-  modalPopupOverlay.classList.add('visible');
-  modalPopup.classList.add('visible');
-  modalPopupContent.classList.add('visible');
-  document.body.classList.add('stop-scroll');
-}, 120000);
+// setTimeout(() => {
+modalPopupOverlay.classList.add('visible');
+modalPopup.classList.add('visible');
+modalPopupContent.classList.add('visible');
+document.body.classList.add('stop-scroll');
+// }, 120000);
 
 
 modalPopupCloseBtn.addEventListener('click', () => {
