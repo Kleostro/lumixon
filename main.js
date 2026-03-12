@@ -72,6 +72,7 @@ new Swiper('.projects-slider', {
 });
 
 const burgerButton = document.querySelector('.burger-button');
+const burgerLinks = document.querySelectorAll('.nav-link');
 
 burgerButton.addEventListener('click', () => {
   burgerButton.classList.toggle('open');
@@ -95,6 +96,13 @@ document.addEventListener('click', (e) => {
   burgerButton.classList.remove('open');
   burgerButton.previousSibling.previousSibling.classList.remove('open');
 });
+
+burgerLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    burgerButton.classList.remove('open');
+    burgerButton.previousSibling.previousSibling.classList.remove('open');
+  });
+})
 
 const modalFormTriggerBtns = document.querySelectorAll('.open-modal-form-btn');
 const modalForm = document.querySelector('.modal-form');
