@@ -88,7 +88,7 @@
 }
 
 .nav-link {
-  font: var(--fb-s);
+  font: var(--fb-m);
 
   @media (width <= 830px) {
     font: var(--fb-xxl);
@@ -115,7 +115,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: var(--gray);
+    color: var(--orange);
     outline: none;
   }
 }
