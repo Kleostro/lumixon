@@ -8,6 +8,14 @@
   }
 }
 
+.cooperation-banner-img {
+  width: 80%;
+  margin-bottom: 100px;
+  @media (width <= 830px) {
+    display: none;
+  }
+}
+
 .team-title {
   font: var(--fh-ml);
   color: var(--dark-gray);
@@ -146,7 +154,7 @@
   align-items: center;
 
   width: 100%;
-  padding-top: 191px;
+  padding-top: 42px;
   border-radius: 30px;
 
   background:

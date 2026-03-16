@@ -22,7 +22,6 @@
 .footer-links,
 .footer-contacts {
   display: flex;
-  flex: 1;
   flex-direction: column;
 
   @media (width <= 830px) {
@@ -52,7 +51,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: var(--gray);
+    color: var(--orange);
     outline: none;
   }
 }
