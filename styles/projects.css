@@ -260,7 +260,7 @@
   background:
     linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
     url("../assets/img/webp/projects-banner.webp") no-repeat;
-  background-position-y: 36%;
+  background-position-y: 60%;
   background-size: 100%;
 
   @media (width <= 830px) {
@@ -275,6 +275,7 @@
 
   @media (width <= 830px) {
     font: var(--fh-xs);
+    font-size: 34px;
   }
 }
 
