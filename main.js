@@ -174,24 +174,29 @@ modalPopupOverlay.addEventListener('click', (e) => {
   document.body.classList.remove('stop-scroll');
 })
 
-const productsButton = document.querySelector('.products-button');
-const projectsButton = document.querySelector('.projects-button');
+const productsButtons = document.querySelectorAll('.products-button');
+const projectsButtons = document.querySelectorAll('.projects-button');
 
-productsButton.addEventListener('click', () => {
-  modalFormOverlay.classList.add('visible');
-  modalForm.classList.add('visible');
-  modalFormContent.classList.add('visible');
-  document.body.classList.add('stop-scroll');
-  modalFormTitle.textContent = 'Оставьте заявку';
-});
+productsButtons.forEach((e) => {
+  e.addEventListener('click', () => {
+    modalFormOverlay.classList.add('visible');
+    modalForm.classList.add('visible');
+    modalFormContent.classList.add('visible');
+    document.body.classList.add('stop-scroll');
+    modalFormTitle.textContent = 'Оставьте заявку';
+  });
+})
 
-projectsButton.addEventListener('click', () => {
-  modalFormOverlay.classList.add('visible');
-  modalForm.classList.add('visible');
-  modalFormContent.classList.add('visible');
-  document.body.classList.add('stop-scroll');
-  modalFormTitle.textContent = 'Оставьте заявку';
-});
+
+projectsButtons.forEach((e) => {
+  e.addEventListener('click', () => {
+    modalFormOverlay.classList.add('visible');
+    modalForm.classList.add('visible');
+    modalFormContent.classList.add('visible');
+    document.body.classList.add('stop-scroll');
+    modalFormTitle.textContent = 'Оставьте заявку';
+  });
+})
 
 // элементы формы и попапа
 const feedbackForm = document.querySelector('.modal-form-form');
