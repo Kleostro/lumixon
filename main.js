@@ -223,6 +223,14 @@ modalSmallFormCloseBtn.addEventListener('click', () => {
   document.body.classList.remove('stop-scroll');
 });
 
+
+
+const phoneInputs = document.querySelectorAll('.modal-form-input-phone');
+phoneInputs.forEach((input) => {
+  Inputmask({ mask: '+7 (999) 999-99-99', })
+    .mask(input);
+});
+
 // элементы форм и попапа
 const feedbackForm = document.querySelector('.modal-form-form');
 const feedbackFormSubmitBtn = document.querySelector('.modal-form-button-submit');
