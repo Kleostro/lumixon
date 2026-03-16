@@ -174,8 +174,8 @@ modalPopupOverlay.addEventListener('click', (e) => {
   document.body.classList.remove('stop-scroll');
 })
 
-const productsButtons = document.querySelectorAll('.products-button');
-const projectsButtons = document.querySelectorAll('.projects-button');
+const productsButtons = document.querySelectorAll('.products-button-action');
+const projectsButtons = document.querySelectorAll('.projects-button-action');
 
 productsButtons.forEach((e) => {
   e.addEventListener('click', () => {
