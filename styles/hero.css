@@ -20,6 +20,7 @@
   background-image: url("../assets/img/webp/hero-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @media (width <= 830px) {
     gap: 0;
@@ -117,7 +118,7 @@
 
 .hero-slider.swiper {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1720px;
 }
 
 .hero-slide.swiper-slide {

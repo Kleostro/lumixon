@@ -22,7 +22,7 @@ new Swiper('.products-slider', {
     delay: 4000,
   },
   spaceBetween: 20,
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   slidesPerGroup: 1,
   navigation: {
     nextEl: '.products-swiper-button-next',
@@ -48,7 +48,7 @@ new Swiper('.projects-slider', {
     delay: 4000,
   },
   spaceBetween: 20,
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   slidesPerGroup: 1,
   navigation: {
     nextEl: '.projects-swiper-button-next',

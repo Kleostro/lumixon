@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
 
-  max-width: 1440px;
+  max-width: 1720px;
   margin: 0 auto;
   padding: 30px 58px;
 
@@ -28,14 +28,14 @@
 }
 
 .logo {
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .header-right {
   display: flex;
+  gap: 20px;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  margin-left: auto;
 
   @media (width <= 1390px) {
     position: fixed;
@@ -57,6 +57,7 @@
   }
 
   @media (width <= 830px) {
+    width: 100%;
     max-width: 100%;
   }
 }

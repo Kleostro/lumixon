@@ -259,7 +259,9 @@
 
   background:
     linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
-    url("../assets/img/webp/projects-banner.webp") center/cover no-repeat;
+    url("../assets/img/webp/projects-banner.webp") no-repeat;
+  background-position-y: 36%;
+  background-size: 100%;
 
   @media (width <= 830px) {
     margin-top: 32px;
