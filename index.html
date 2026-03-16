@@ -337,7 +337,7 @@
 
           <div class="products-slider swiper">
             <div class="products-slider-wrapper swiper-wrapper">
-              <div class="products-slide swiper-slide">
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -363,7 +363,7 @@
                 />
                 <span class="products-slide-text">Даунлайты</span>
               </div>
-              <div class="products-slide swiper-slide">
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -389,7 +389,7 @@
                 />
                 <span class="products-slide-text">Магнитные системы, 48V</span>
               </div>
-              <div class="products-slide swiper-slide">
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -416,7 +416,7 @@
                 <span class="products-slide-text">Линейный профиль</span>
               </div>
 
-              <div class="products-slide swiper-slide">
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -443,7 +443,7 @@
                 <span class="products-slide-text">Накладные светильники</span>
               </div>
 
-              <div class="products-slide swiper-slide">
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -470,7 +470,7 @@
                 <span class="products-slide-text">Подвесные светильники</span>
               </div>
 
-              <div class="products-slide swiper-slide">
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -849,7 +849,7 @@
         </div>
         <div class="projects-slider swiper">
           <div class="projects-slider-wrapper swiper-wrapper">
-            <div class="projects-slide swiper-slide">
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -875,7 +875,7 @@
               />
               <span class="projects-slide-text">Т-Банк, штаб-квартира</span>
             </div>
-            <div class="projects-slide swiper-slide">
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -901,7 +901,7 @@
               />
               <span class="projects-slide-text">BOSCO в ГУМе</span>
             </div>
-            <div class="projects-slide swiper-slide">
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -928,7 +928,7 @@
               <span class="projects-slide-text">RODINA Grand SPA</span>
             </div>
 
-            <div class="projects-slide swiper-slide">
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -957,7 +957,7 @@
               >
             </div>
 
-            <div class="projects-slide swiper-slide">
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -984,7 +984,7 @@
               <span class="projects-slide-text">Офис «АБ Капитал»</span>
             </div>
 
-            <div class="projects-slide swiper-slide">
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -1460,6 +1460,77 @@
             >
           </form>
           <button class="modal-close-btn modal-form-close-btn"></button>
+        </div>
+      </div>
+    </div>
+
+        <div class="modal modal-small-form">
+      <div class="modal-overlay modal-small-form-overlay">
+        <div class="modal-content modal-small-form-content">
+          <form class="modal-small-form-form">
+            <h4 class="modal-small-form-title">Получить каталог</h4>
+            <span class="modal-small-form-text">
+              Отправим файл с полным ассортиментом
+            </span>
+
+            <div class="modal-small-form-controls">
+              <div class="modal-small-form-control">
+                <label for="name" class="modal-small-form-control-label"
+                  >Имя<span class="modal-small-form-control-label-required"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="name"
+                  type="text"
+                  class="modal-small-form-control-input"
+                  placeholder="Как к вам обращаться"
+                  required
+                />
+              </div>
+              <div class="modal-small-form-control">
+                <label for="email" class="modal-small-form-control-label"
+                  >Email<span class="modal-small-form-control-label-required"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  class="modal-small-form-control-input"
+                  placeholder="email@company.com"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                  required
+                />
+              </div>
+              <div class="modal-small-form-control">
+                <label for="tg" class="modal-small-form-control-label"
+                  >Telegram</label
+                >
+                <input
+                  id="tg"
+                  type="text"
+                  class="modal-small-form-control-input"
+                  placeholder="@username"
+                />
+              </div>
+            </div>
+
+            <button class="modal-small-form-button-submit" type="submit">
+              Получить
+            </button>
+            <span class="modal-small-form-info"
+              ><span class="modal-small-form-info-accent">*</span>— обязательные поля.
+              Нажимая кнопку, вы соглашаетесь с
+              <a
+                href="https://lumixon.pro/include/licenses_detail.php"
+                target="_blank"
+                class="modal-small-form-info-link"
+                >политикой конфиденциальности</a
+              ></span
+            >
+          </form>
+          <button class="modal-close-btn modal-small-form-close-btn"></button>
         </div>
       </div>
     </div>

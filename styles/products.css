@@ -163,6 +163,8 @@
 }
 
 .products-slide.swiper-slide {
+  cursor: pointer;
+
   position: relative;
 
   overflow: hidden;
