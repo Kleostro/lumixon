@@ -11,7 +11,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
-
+    <link
+    rel="preload"
+    as="image"
+    href="./assets/img/webp/hero-bg.webp"
+    fetchpriority="high"
+    type="image/webp"
+  >
+<script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="jquery.inputmask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./main.js" type="module" defer></script>
   </head>
@@ -23,7 +31,6 @@
             <img class="logo-img" src="./assets/img/svg/logo.svg" alt="logo" />
           </a>
           <div class="header-right">
-            <nav class="nav">
               <ul class="nav-list">
                 <li class="nav-item">
                   <a href="#about-us" class="nav-link">Кто мы</a>
@@ -40,12 +47,9 @@
                 <li class="nav-item">
                   <a href="#projects" class="nav-link">Наши проекты</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#team" class="nav-link">Команда проекта</a>
-                </li>
               </ul>
-            </nav>
-            <a href="tel:+79030091215" class="phone-link">+7 903 009-12-55</a>
+
+            <a href="tel:+74951284501" class="phone-link">+7 495 128-45-01</a>
             <button class="header-action-btn open-modal-form-btn">
               Получить решение
             </button>
@@ -157,9 +161,6 @@
             </div>
             <div class="hero-slide swiper-slide">
               <img src="./assets/img/svg/logo-8.svg" alt="logo 8" />
-            </div>
-            <div class="hero-slide swiper-slide">
-              <img src="./assets/img/svg/logo-9.svg" alt="logo 9" />
             </div>
             <div class="hero-slide swiper-slide">
               <img src="./assets/img/svg/logo-10.svg" alt="logo 10" />
@@ -307,10 +308,8 @@
         <div class="products-top">
           <div class="products-text">
             <h2 class="products-title">Наша продукция</h2>
-            <a
-              href="https://lumixon.pro/product/"
-              target="_blank"
-              class="products-button"
+            <button
+              class="products-button products-button-action"
             >
               <span class="products-button-text">Весь каталог</span>
               <span class="products-button-arrow">
@@ -330,13 +329,12 @@
                   />
                 </svg>
               </span>
-            </a>
+            </button>
           </div>
 
           <div class="products-slider swiper">
             <div class="products-slider-wrapper swiper-wrapper">
-              <div class="products-slide swiper-slide">
-                <a href="https://lumixon.pro/product/daunlayty-vstraivaemye/" target="_blank" class="products-slide-link"></a>
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -362,8 +360,7 @@
                 />
                 <span class="products-slide-text">Даунлайты</span>
               </div>
-              <div class="products-slide swiper-slide">
-                 <a href="https://lumixon.pro/product/magnitnye-sistemy/" target="_blank" class="products-slide-link"></a>
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -389,8 +386,7 @@
                 />
                 <span class="products-slide-text">Магнитные системы, 48V</span>
               </div>
-              <div class="products-slide swiper-slide">
-                 <a href="https://lumixon.pro/product/lineynye-sistemy/" target="_blank" class="products-slide-link"></a>
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -417,8 +413,7 @@
                 <span class="products-slide-text">Линейный профиль</span>
               </div>
 
-              <div class="products-slide swiper-slide">
-                 <a href="https://lumixon.pro/product/nakladnye-svetilniki/" target="_blank" class="products-slide-link"></a>
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -445,8 +440,7 @@
                 <span class="products-slide-text">Накладные светильники</span>
               </div>
 
-              <div class="products-slide swiper-slide">
-                         <a href="https://lumixon.pro/product/podvesnye-svetilniki/" target="_blank" class="products-slide-link"></a>
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -473,8 +467,7 @@
                 <span class="products-slide-text">Подвесные светильники</span>
               </div>
 
-              <div class="products-slide swiper-slide">
-                 <a href="https://lumixon.pro/product/trekovye-sistemy/" target="_blank" class="products-slide-link"></a>
+              <div class="products-slide swiper-slide products-button-action">
                 <div class="products-slide-shadow"></div>
                 <span class="products-slide-arrow">
                   <svg
@@ -535,10 +528,9 @@
           </div>
         </div>
 
-        <a
-          href="https://lumixon.pro/product/"
-          target="_blank"
-          class="products-button-mobile"
+        <button
+
+          class="products-button-mobile products-button-action"
         >
           <span class="products-button-text">Весь каталог</span>
           <span class="products-button-arrow">
@@ -558,7 +550,7 @@
               />
             </svg>
           </span>
-        </a>
+        </button>
         <div class="products-banner">
           <span class="products-banner-text"
             >Нужна помощь с подбором <br />
@@ -829,10 +821,8 @@
       <section class="projects" id="projects">
         <div class="projects-top">
           <h2 class="projects-title">Наши проекты</h2>
-          <a
-            href="https://lumixon.pro/projects/"
-            target="_blank"
-            class="projects-button"
+          <button
+            class="projects-button projects-button-action"
           >
             <span class="projects-button-text">Больше проектов</span>
             <span class="projects-button-arrow">
@@ -852,12 +842,11 @@
                 />
               </svg>
             </span>
-          </a>
+          </button>
         </div>
         <div class="projects-slider swiper">
           <div class="projects-slider-wrapper swiper-wrapper">
-            <div class="projects-slide swiper-slide">
-              <a href="https://lumixon.pro/projects/moscow/t-bank-na-bellorusskoy/" target="_blank" class="projects-slide-link"></a>
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -883,8 +872,7 @@
               />
               <span class="projects-slide-text">Т-Банк, штаб-квартира</span>
             </div>
-            <div class="projects-slide swiper-slide">
-               <a href="https://lumixon.pro/projects/moscow/bosco-x-rubar-gum/" target="_blank" class="projects-slide-link"></a>
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -910,8 +898,7 @@
               />
               <span class="projects-slide-text">BOSCO в ГУМе</span>
             </div>
-            <div class="projects-slide swiper-slide">
-              <a href="https://lumixon.pro/projects/irkutsk/butik-otel-ridona-grand-spa-biblioteka/" target="_blank" class="projects-slide-link"></a>
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -938,8 +925,7 @@
               <span class="projects-slide-text">RODINA Grand SPA</span>
             </div>
 
-            <div class="projects-slide swiper-slide">
-              <a href="https://lumixon.pro/projects/moscow/osobnyak-prokhorova-2-y-etazh/" target="_blank" class="projects-slide-link"></a>
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -968,8 +954,7 @@
               >
             </div>
 
-            <div class="projects-slide swiper-slide">
-              <a href="https://lumixon.pro/projects/moscow/ofis-kompanii-ab-kapital/" target="_blank" class="projects-slide-link"></a>
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -996,8 +981,7 @@
               <span class="projects-slide-text">Офис «АБ Капитал»</span>
             </div>
 
-            <div class="projects-slide swiper-slide">
-              <a href="https://lumixon.pro/projects/moscow/donstroy/" target="_blank" class="projects-slide-link"></a>
+            <div class="projects-slide swiper-slide projects-button-action">
               <div class="projects-slide-shadow"></div>
               <span class="projects-slide-arrow">
                 <svg
@@ -1057,10 +1041,9 @@
           <div class="projects-slider-pagination swiper-pagination"></div>
         </div>
 
-        <a
-          href="https://lumixon.pro/product/"
-          target="_blank"
-          class="projects-button-mobile"
+        <button
+
+          class="projects-button-mobile projects-button-action"
         >
           <span class="projects-button-text">Весь каталог</span>
           <span class="projects-button-arrow">
@@ -1080,7 +1063,7 @@
               />
             </svg>
           </span>
-        </a>
+        </button>
 
         <div class="projects-banner">
           <span class="projects-banner-text">Хотите такой же результат?</span>
@@ -1214,6 +1197,7 @@
         </ul>
 
         <div class="cooperation-banner">
+          <img src="./assets/img/svg/popup-partners.svg" class="cooperation-banner-img"></img>
           <h3 class="cooperation-banner-title">
             Крупнейшие компании нам уже доверяют
           </h3>
@@ -1226,7 +1210,7 @@
 
           <ul class="cooperation-banner-contacts">
             <li class="cooperation-banner-contact">
-              <a href="mailto:vs@lumixon.pro" class="cooperation-banner-link">
+              <a href="mailto:hello@lumixon.pro" class="cooperation-banner-link">
                 <span class="cooperation-banner-contact-icon">
                   <svg
                     width="16"
@@ -1244,12 +1228,12 @@
                   </svg>
                 </span>
                 <span class="cooperation-banner-contact-text"
-                  >vs@lumixon.pro</span
+                  >hello@lumixon.pro</span
                 >
               </a>
             </li>
             <li class="cooperation-banner-contact">
-              <a href="tel:+79030091255" class="cooperation-banner-link">
+              <a href="tel:+74951284501" class="cooperation-banner-link">
                 <span class="cooperation-banner-contact-icon">
                   <svg
                     width="16"
@@ -1267,7 +1251,7 @@
                   </svg>
                 </span>
                 <span class="cooperation-banner-contact-text"
-                  >+7 903 009-12-55</span
+                  >+7 495 128-45-01</span
                 >
               </a>
             </li>
@@ -1300,31 +1284,7 @@
                 >
               </a>
             </li>
-            <li class="cooperation-banner-contact">
-              <a
-                href="https://lumixon.pro/"
-                target="_blank"
-                class="cooperation-banner-link"
-              >
-                <span class="cooperation-banner-contact-icon">
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5M13.5 7C13.5 3.41015 10.5899 0.5 7 0.5M13.5 7H0.5M7 13.5C3.41015 13.5 0.5 10.5899 0.5 7M7 13.5C5.33095 11.7475 4.4 9.42012 4.4 7C4.4 4.57988 5.33095 2.2525 7 0.5M7 13.5C8.66905 11.7475 9.6 9.42012 9.6 7C9.6 4.57988 8.66905 2.2525 7 0.5M0.5 7C0.5 3.41015 3.41015 0.5 7 0.5"
-                      stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <span class="cooperation-banner-contact-text">lumixon.pro</span>
-              </a>
-            </li>
+
           </ul>
         </div>
       </section>
@@ -1355,15 +1315,6 @@
               </li>
             </ul>
           </nav>
-          <div class="footer-links">
-            <span class="footer-subtitle">Внешние ссылки</span>
-            <a
-              href="https://lumixon.pro/"
-              target="_blank"
-              class="footer-nav-link"
-              >Основной сайт</a
-            >
-          </div>
           <div class="footer-info">
             <span class="footer-subtitle">Информация</span>
             <p class="footer-info-text">
@@ -1394,11 +1345,11 @@
           <div class="footer-contacts">
             <span class="footer-subtitle">Контакты</span>
             <div class="footer-contacts-wrapper">
-              <a href="tel:+79030091255" class="footer-nav-link"
-                >+7 903 009-12-55</a
+              <a href="tel:+74951284501" class="footer-nav-link"
+                >+7 495 128 45 01</a
               >
-              <a href="mailto:vs@lumixon.ru" class="footer-nav-link"
-                >vs@lumixon.ru</a
+              <a href="mailto:hello@lumixon.pro" class="footer-nav-link"
+                >hello@lumixon.pro</a
               >
               <a
                 href="https://t.me/vvv9191"
@@ -1418,7 +1369,7 @@
     <div class="modal modal-form">
       <div class="modal-overlay modal-form-overlay">
         <div class="modal-content modal-form-content">
-          <form class="modal-form-form">
+          <form class="modal-form-form" >
             <h4 class="modal-form-title">Обсудить задачу</h4>
             <span class="modal-form-text">
               Расскажите, что нужно — перезвоним в течение рабочего дня
@@ -1448,8 +1399,7 @@
                 <input
                   id="phone"
                   type="text"
-                  class="modal-form-control-input"
-                  placeholder="+7 (___) ___+__+__"
+                  class="modal-form-control-input modal-form-input-phone"
                   required
                 />
               </div>
@@ -1510,6 +1460,64 @@
       </div>
     </div>
 
+        <div class="modal modal-small-form">
+      <div class="modal-overlay modal-small-form-overlay">
+        <div class="modal-content modal-small-form-content">
+          <form class="modal-small-form-form">
+            <h4 class="modal-small-form-title">Получить каталог</h4>
+            <span class="modal-small-form-text">
+              Отправим файл с полным ассортиментом
+            </span>
+
+            <div class="modal-small-form-controls">
+              <div class="modal-small-form-control">
+                <label for="name" class="modal-small-form-control-label"
+                  >Имя<span class="modal-small-form-control-label-required"
+                    >*</span
+                  ></label
+                >
+                <input
+                  id="name"
+                  type="text"
+                  class="modal-small-form-control-input"
+                  placeholder="Как к вам обращаться"
+                  required
+                />
+              </div>
+                <div class="modal-small-form-control">
+                  <label for="phone" class="modal-small-form-control-label"
+                    >Телефон<span class="modal-small-form-control-label-required"
+                      >*</span
+                    ></label
+                  >
+                  <input
+                    id="phone"
+                    type="text"
+                    class="modal-small-form-control-input modal-form-input-phone"
+                    required
+                  />
+                </div>
+            </div>
+
+            <button class="modal-small-form-button-submit" type="submit">
+              Получить
+            </button>
+            <span class="modal-small-form-info"
+              ><span class="modal-small-form-info-accent">*</span>— обязательные поля.
+              Нажимая кнопку, вы соглашаетесь с
+              <a
+                href="https://lumixon.pro/include/licenses_detail.php"
+                target="_blank"
+                class="modal-small-form-info-link"
+                >политикой конфиденциальности</a
+              ></span
+            >
+          </form>
+          <button class="modal-close-btn modal-small-form-close-btn"></button>
+        </div>
+      </div>
+    </div>
+
     <div class="modal modal-popup">
       <div class="modal-overlay modal-popup-overlay">
         <div class="modal-content modal-popup-content">
@@ -1530,7 +1538,7 @@
                 >
                 <ul class="modal-popup-contacts-list">
                   <li class="modal-popup-contact">
-                    <a href="mailto:vs@lumixon.pro" class="modal-popup-link">
+                    <a href="mailto:hello@lumixon.pro" class="modal-popup-link">
                       <span class="modal-popup-contact-icon">
                         <svg
                           width="16"
@@ -1550,7 +1558,7 @@
                     </a>
                   </li>
                   <li class="modal-popup-contact">
-                    <a href="tel:+79030091255" class="modal-popup-link">
+                    <a href="tel:+74951284501" class="modal-popup-link">
                       <span class="modal-popup-contact-icon">
                         <svg
                           width="16"
@@ -1595,30 +1603,6 @@
                       </span>
                     </a>
                   </li>
-                  <li class="modal-popup-contact">
-                    <a
-                      href="https://lumixon.pro/"
-                      target="_blank"
-                      class="modal-popup-link"
-                    >
-                      <span class="modal-popup-contact-icon">
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 14 14"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5M13.5 7C13.5 3.41015 10.5899 0.5 7 0.5M13.5 7H0.5M7 13.5C3.41015 13.5 0.5 10.5899 0.5 7M7 13.5C5.33095 11.7475 4.4 9.42012 4.4 7C4.4 4.57988 5.33095 2.2525 7 0.5M7 13.5C8.66905 11.7475 9.6 9.42012 9.6 7C9.6 4.57988 8.66905 2.2525 7 0.5M0.5 7C0.5 3.41015 3.41015 0.5 7 0.5"
-                            stroke="white"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </a>
-                  </li>
                 </ul>
               </div>
             </div>
@@ -1652,8 +1636,7 @@
                   <input
                     id="phone"
                     type="text"
-                    class="modal-popup-control-input"
-                    placeholder="+7 (___) ___+__+__"
+                    class="modal-popup-control-input modal-form-input-phone"
                     required
                   />
                 </div>
@@ -1678,6 +1661,22 @@
           <button class="modal-close-btn modal-popup-close-btn"></button>
         </div>
       </div>
+    </div>
+    <div class="social-link-box">
+            <a href="https://wa.me/79030091255" target="_blank" class="wa-link">
+
+        <span class="wa-link-tooltip">Написать в WhatsApp</span>
+        <div class="wa-link-img">
+          <img src="./assets/img/png/wa.png" alt="whatsapp" />
+        </div>
+      </a>
+      <a href="https://t.me/vladimir_lumixon" target="_blank" class="tg-link">
+
+        <span class="tg-link-tooltip">Написать в Telegram</span>
+        <div class="tg-link-img">
+          <img src="./assets/img/png/tg.png" alt="telegram" />
+        </div>
+      </a>
     </div>
   </body>
 </html>

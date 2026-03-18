@@ -13,8 +13,9 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
-  max-width: 1440px;
+  max-width: 1720px;
   margin: 0 auto;
   padding: 30px 58px;
 
@@ -28,14 +29,26 @@
 }
 
 .logo {
-  margin-right: 26px;
+  width: 200px;
+  height: 50px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .header-right {
   display: flex;
+  gap: 4rem;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+
+  @media (width <= 1650px) {
+    gap: 2rem;
+  }
+
+  @media (width <= 1550px) {
+    gap: 1rem;
+  }
 
   @media (width <= 1390px) {
     position: fixed;
@@ -57,7 +70,9 @@
   }
 
   @media (width <= 830px) {
+    width: 100%;
     max-width: 100%;
+    padding-top: 150px;
   }
 }
 
@@ -75,8 +90,17 @@
 
 .nav-list {
   display: flex;
-  gap: 25px;
+  gap: 4rem;
   align-items: center;
+  margin-right: 1rem;
+
+  @media (width <= 1650px) {
+    gap: 2rem;
+  }
+
+  @media (width <= 1550px) {
+    gap: 1rem;
+  }
 
   @media (width <= 1390px) {
     flex-direction: column;
@@ -87,8 +111,14 @@
   }
 }
 
+.nav-item {
+  display: flex;
+}
+
 .nav-link {
-  font: var(--fb-s);
+  width: max-content;
+  font: var(--fb-ml);
+  font-weight: 600;
 
   @media (width <= 830px) {
     font: var(--fb-xxl);
@@ -115,7 +145,7 @@
   &:hover,
   &:active,
   &:focus {
-    color: var(--gray);
+    color: var(--orange);
     outline: none;
   }
 }

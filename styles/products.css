@@ -159,11 +159,12 @@
 
 .products-slider.swiper {
   width: 100%;
-  max-width: 876px;
   height: max-content;
 }
 
 .products-slide.swiper-slide {
+  cursor: pointer;
+
   position: relative;
 
   overflow: hidden;

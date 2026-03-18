@@ -19,8 +19,11 @@
 }
 
 .about-us-text {
+  width: max-content;
   margin-right: 76px;
   margin-bottom: 49px;
+  margin-left: auto;
+
   font: var(--fb-xxl);
   color: var(--dark-gray);
 
@@ -37,7 +40,7 @@
   grid-column: 2 span;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-around;
 
   margin-bottom: 84px;
 

@@ -150,6 +150,8 @@
 }
 
 .projects-slide.swiper-slide {
+  cursor: pointer;
+
   position: relative;
 
   overflow: hidden;
@@ -259,7 +261,9 @@
 
   background:
     linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
-    url("../assets/img/webp/projects-banner.webp") center/cover no-repeat;
+    url("../assets/img/webp/projects-banner.webp") no-repeat;
+  background-position-y: 60%;
+  background-size: 100%;
 
   @media (width <= 830px) {
     margin-top: 32px;
@@ -273,6 +277,7 @@
 
   @media (width <= 830px) {
     font: var(--fh-xs);
+    font-size: 34px;
   }
 }
 

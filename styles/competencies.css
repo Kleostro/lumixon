@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-around;
 
   margin-bottom: 84px;
 
@@ -71,12 +71,16 @@
   padding: 14.5px 28px;
   border-radius: 30px;
 
-  font: var(--fb-xxl);
+  font: var(--fb-xxxxl);
   color: var(--white);
 
   background-color: var(--dark-gray);
 
   transition: background-color 0.3s ease;
+
+  @media (width <= 830px) {
+    font: var(--fb-xxl);
+  }
 }
 
 .competencies-item:hover
@@ -86,12 +90,17 @@
 }
 
 .competencies-item-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
   padding-left: 20px;
+
   list-style: disc;
 }
 
 .competencies-item-bullet {
-  font: var(--fb-l);
+  font: var(--fb-xl);
   color: var(--dark-gray);
 
   @media (width <= 830px) {
@@ -110,7 +119,9 @@
 
   background:
     linear-gradient(rgb(0 0 0 / 10%), rgb(0 0 0 / 10%)),
-    url("../assets/img/webp/competencies-banner.webp") left/cover no-repeat;
+    url("../assets/img/webp/competencies-banner.webp") no-repeat;
+  background-position-y: 36%;
+  background-size: 100%;
 
   @media (width <= 830px) {
     padding: 27px 28px;
